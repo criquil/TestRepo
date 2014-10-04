@@ -58,14 +58,14 @@
       <Configuration>Release</Configuration>
       <Platform>Windows Phone</Platform>
     </ProjectConfiguration>
-	<ProjectConfiguration Include="Distribution|Android">
-	  <Configuration>Distribution</Configuration>
-	  <Platform>Android</Platform>
-	</ProjectConfiguration>
-	<ProjectConfiguration Include="Distribution|iOS">
-	  <Configuration>Distribution</Configuration>
-	  <Platform>iOS</Platform>
-	</ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Android">
+      <Configuration>Distribution</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|iOS">
+      <Configuration>Distribution</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Distribution|Windows-AnyCPU">
       <Configuration>Distribution</Configuration>
       <Platform>Windows-AnyCPU</Platform>
@@ -99,6 +99,69 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="images\" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\animate.min.css" />
+    <Content Include="css\bootstrap-responsive.css" />
+    <Content Include="css\bootstrap-responsive.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\bower.json" />
+    <Content Include="css\source\bounce.css" />
+    <Content Include="css\source\bounceIn.css" />
+    <Content Include="css\source\bounceInDown.css" />
+    <Content Include="css\source\bounceInLeft.css" />
+    <Content Include="css\source\bounceInRight.css" />
+    <Content Include="css\source\bounceInUp.css" />
+    <Content Include="css\source\bounceOut.css" />
+    <Content Include="css\source\bounceOutDown.css" />
+    <Content Include="css\source\bounceOutLeft.css" />
+    <Content Include="css\source\bounceOutRight.css" />
+    <Content Include="css\source\bounceOutUp.css" />
+    <Content Include="css\source\fadeIn.css" />
+    <Content Include="css\source\fadeInDown.css" />
+    <Content Include="css\source\fadeInDownBig.css" />
+    <Content Include="css\source\fadeInLeft.css" />
+    <Content Include="css\source\fadeInLeftBig.css" />
+    <Content Include="css\source\fadeInRight.css" />
+    <Content Include="css\source\fadeInRightBig.css" />
+    <Content Include="css\source\fadeInUp.css" />
+    <Content Include="css\source\fadeInUpBig.css" />
+    <Content Include="css\source\fadeOut.css" />
+    <Content Include="css\source\fadeOutDown.css" />
+    <Content Include="css\source\fadeOutDownBig.css" />
+    <Content Include="css\source\fadeOutLeft.css" />
+    <Content Include="css\source\fadeOutLeftBig.css" />
+    <Content Include="css\source\fadeOutRight.css" />
+    <Content Include="css\source\fadeOutRightBig.css" />
+    <Content Include="css\source\fadeOutUp.css" />
+    <Content Include="css\source\fadeOutUpBig.css" />
+    <Content Include="css\source\flash.css" />
+    <Content Include="css\source\flip.css" />
+    <Content Include="css\source\flipInX.css" />
+    <Content Include="css\source\flipInY.css" />
+    <Content Include="css\source\flipOutX.css" />
+    <Content Include="css\source\flipOutY.css" />
+    <Content Include="css\source\hinge.css" />
+    <Content Include="css\source\lightSpeedIn.css" />
+    <Content Include="css\source\lightSpeedOut.css" />
+    <Content Include="css\source\pulse.css" />
+    <Content Include="css\source\rollIn.css" />
+    <Content Include="css\source\rollOut.css" />
+    <Content Include="css\source\rotateIn.css" />
+    <Content Include="css\source\rotateInDownLeft.css" />
+    <Content Include="css\source\rotateInDownRight.css" />
+    <Content Include="css\source\rotateInUpLeft.css" />
+    <Content Include="css\source\rotateInUpRight.css" />
+    <Content Include="css\source\rotateOut.css" />
+    <Content Include="css\source\rotateOutDownLeft.css" />
+    <Content Include="css\source\rotateOutDownRight.css" />
+    <Content Include="css\source\rotateOutUpLeft.css" />
+    <Content Include="css\source\rotateOutUpRight.css" />
+    <Content Include="css\source\shake.css" />
+    <Content Include="css\source\swing.css" />
+    <Content Include="css\source\tada.css" />
+    <Content Include="css\source\wobble.css" />
+    <Content Include="css\style.css" />
     <Content Include="merges\android\scripts\android2.3-jscompat.js" />
     <Content Include="merges\android\scripts\platformOverrides.js" />
     <Folder Include="merges\ios\" />
@@ -115,7 +178,7 @@
     <Folder Include="res\screens\wp8\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="config.xml" >
+    <Content Include="config.xml">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="index.html" />
@@ -165,45 +228,40 @@
     <Content Include="res\screens\wp8\screen-portrait.jpg" />
   </ItemGroup>
   <PropertyGroup>
-	<TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
-	<DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+    <DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-	<TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
-	<TypeScriptRemoveComments>false</TypeScriptRemoveComments>
-	<TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-	<TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
-	<TypeScriptRemoveComments>true</TypeScriptRemoveComments>
-	<TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Distribution'">
-	<TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
-	<TypeScriptRemoveComments>true</TypeScriptRemoveComments>
-	<TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
   </PropertyGroup>
   <Import Project="$(AppData)\npm\node_modules\vs-mda-targets\Microsoft.MDA.targets" />
   <Import Project="$(AppData)\npm\node_modules\vs-mda-targets\Microsoft.TypeScript.MDA.targets" />
   <PropertyGroup>
     <ProjectUISubcaption>Multi-Device Hybrid App</ProjectUISubcaption>
   </PropertyGroup>
-
   <Target Name="EnsureBuildPrerequisites">
     <!-- These errors will trigger if building from inside Visual Studio and requirements could not be determined -->
     <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(NodeJsDir) == ''" Text="Path to NodeJs could not be determined. Please check that NodeJs has been installed." />
     <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(MDAVsixDir) == ''" Text="Path to the Visual Studio Extension for Multi-Device Hybrid Apps could not be determined. Please check that the extension has been installed." />
-
     <!-- These errors will trigger if building from outside Visual Studio (e.g. command line) and environment variables have not been set -->
     <Error Condition="$(MDAPropertiesEvaluated) == '' And $(NodeJsDir) == ''" Text="Path to NodeJs has not been specified. Please check that NodeJs has been installed and set the NodeJsDir environment variable before building." />
     <Error Condition="$(MDAPropertiesEvaluated) == '' And $(MDAVsixDir) == ''" Text="Path to Visual Studio Extension for Multi-Device Hybrid Apps has not been specified. Please install it and set the MDAVsixDir environment variable before building." />
-
     <!-- Sanity check that things exist in the specified places. These are more likely to fail if building outside Visual Studio and the required environment variables have not been set, or set incorrectly. -->
     <Error Condition="!Exists('$(NodeJsDir)') Or !Exists('$(NodeJsDir)\node.exe')" Text="The specified NodeJs directory $(NodeJsDir) either does not exist, or does not contain node.exe. Please check that NodeJs has been installed, and set the NodeJsDir variable to the correct directory." />
     <Error Condition="!Exists('$(MDAVsixDir)') Or !Exists('$(MDAVsixDir)\packages\vs-mda')" Text="The specified directory to the Visual Studio extension $(MDAVsixDir)\node.exe either does not exist, or does not contain a packages\vs-mda sub-directory. Please check that the extension directory exists and set the MDAVsixDir variable to the correct directory." />
-
     <!-- Installs (if necessary) the supporting Nodejs module -->
-    <Exec Command='"$(MDAVsixDir)"\packages\vs-mda\install "$(NodeJsDir)" "$(MDAVsixDir)"\packages\vs-mda'/>
+    <Exec Command="&quot;$(MDAVsixDir)&quot;\packages\vs-mda\install &quot;$(NodeJsDir)&quot; &quot;$(MDAVsixDir)&quot;\packages\vs-mda" />
   </Target>
-
 </Project>
